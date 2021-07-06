@@ -8,8 +8,9 @@ public class House {
     private String image;
     private int price;
     private int account_id;
+    private String userName;
 
-    public House(int id, String address, String desc, String type, String image, int price, int account_id) {
+    public House(int id, String address, String desc, String type, String image, int price, int account_id, String userName) {
         this.id = id;
         this.address = address;
         this.desc = desc;
@@ -17,9 +18,7 @@ public class House {
         this.image = image;
         this.price = price;
         this.account_id = account_id;
-    }
-
-    public House() {
+        this.userName = userName;
     }
 
     public int getId() {
@@ -76,5 +75,13 @@ public class House {
 
     public void setAccount_id(int account_id) {
         this.account_id = account_id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 }
