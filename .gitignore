@@ -1,0 +1,4 @@
+.gradle
+.idea
+build.gradle
+src/main/java/dao/SQLConnection.java
